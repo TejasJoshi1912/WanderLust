@@ -8,13 +8,19 @@ const listingSchema = new Schema({
   },
   description: String,
   image: {
-    type: String,
-    default:
-      "https://unsplash.com/photos/misty-forest-with-sunlit-fog-overhead-ufjI0V-mtoc",
-    set: (v) =>
-      v === ""
-        ? "https://unsplash.com/photos/misty-forest-with-sunlit-fog-overhead-ufjI0V-mtoc"
-        : v,
+    filename: {
+      type: String,
+      default: "listingimage"
+    },
+    url: {
+      type: String,
+      default:
+        "https://unsplash.com/photos/misty-forest-with-sunlit-fog-overhead-ufjI0V-mtoc",
+      set: (v) =>
+        v === ""
+          ? "https://unsplash.com/photos/misty-forest-with-sunlit-fog-overhead-ufjI0V-mtoc"
+          : v,
+    }
   },
   price: Number,
   location: String,
