@@ -1,0 +1,15 @@
+<% layout("/layouts/boilerplate") %>
+
+<div class="row justify-content-center mt-5">
+  <div class="col-md-6">
+    <div class="alert alert-danger d-flex align-items-center shadow-lg p-4 rounded-3" role="alert">
+      <svg class="bi flex-shrink-0 me-3" width="32" height="32" role="img" aria-label="Danger:">
+        <use xlink:href="#exclamation-triangle-fill"/>
+      </svg>
+      <div>
+        <h4 class="alert-heading mb-2">Error</h4>
+        <p class="mb-0"><%= message %></p>
+      </div>
+    </div>
+  </div>
+</div>

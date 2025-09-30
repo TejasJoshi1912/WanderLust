@@ -88,3 +88,45 @@ body {
     background-color: #fe424d !important;
     border: none !important;
 }
+#edit-btn{
+     background-color: #fe424d !important;
+    border: none !important;
+}
+/* show page */
+.show-img{
+ height: 400px;   /* you can increase/decrease as you like */
+    width: 100%;     /* makes it responsive */
+    object-fit: cover; /* crops instead of distorting */
+    border-radius: 1rem;}
+
+    /* buttons on show page */
+.btns {
+  display: flex;
+  gap: 1rem;         /* space between buttons */
+  margin-top: 1.5rem;
+  margin-left: 220px;
+}
+
+.action-btn {
+  min-width: 120px;   /* same width for both */
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  background-color: #fe424d !important;
+      border: none !important;
+
+}
+
+#deleteBtn {
+  background-color: #fe424d !important;
+  border: none !important;
+  color: white;
+}
+#reviews-card{
+    margin-left: 1.5rem;
+}
+
+
+
+
